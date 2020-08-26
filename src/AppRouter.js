@@ -21,7 +21,7 @@ function AppRouter() {
             <GuardedRoute exact path='/' component= {Dashboard} history={history} />
             <Route path='/login' component={Login} history={history}/>
             <GuardedRoute path='/list' component={ContactList}  />
-            <GuardedRoute component={NotFound} />
+            {/* <GuardedRoute component={NotFound} /> */}
       </div>
     </Router>
   );
