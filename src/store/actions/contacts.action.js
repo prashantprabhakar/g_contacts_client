@@ -16,7 +16,7 @@ export const fetchContacts = () => {
           if(resp.success) {
             console.log(resp.data)
             dispatch({ type: ACTIONS.SET_CONTACT_LIST, payload: resp.data})
-            dispatch({type: ACTIONS.SHOW_NOTFICATION, notification: {isError: false, msg: 'Contact List loaded'}})
+            //dispatch({type: ACTIONS.SHOW_NOTFICATION, notification: {isError: false, msg: 'Contact List loaded'}})
           } else {
             dispatch({type: ACTIONS.SHOW_NOTFICATION, notification: {isError: true, msg: resp.message}})
           }

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import Logout from './Logout'
+import UserInfo from './common/UserInfo'
 
 const Navbar = (props) => {
 
@@ -22,8 +23,7 @@ const Navbar = (props) => {
     <nav className="nav-wrapper grey nav-blue">
       <div className="container">
         <Link to='/' className='user_dtl'>
-            <p className="inline_p"><img className="dp" src={userObj?.imageUrl} alt="" /> </p>
-            <p className="inline_p"> {userObj?.name} </p>
+            <UserInfo name={userObj?.name} dp_url={userObj?.imageUrl} />
         </Link>
         <div className="btn_logout">
             <Logout />

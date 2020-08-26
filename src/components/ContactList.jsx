@@ -3,9 +3,9 @@ import { connect } from 'react-redux'
 
 import {fetchContacts, deleteContact} from "./../store/actions/contacts.action"
 import Icon from './common/icons'
+import UserInfo from './common/UserInfo'
 
 const ContactList = ({
-    tokenId,
     totalContacts,
     contactList,
     fetchContacts,
@@ -16,11 +16,6 @@ const ContactList = ({
         fetchContacts()
     },[])
 
-  
-
-   const renderProfileImage = (url) => {
-       return <img className="dp" src={url} alt="" />
-   }
 
     return(
         <div>
@@ -32,18 +27,18 @@ const ContactList = ({
                             <td> Name </td>
                             <td> Email </td>
                             <td> Phone </td>
+                            <td> Action </td>
                         </thead>
                         {
                             contactList.map(contact => (
                             <tr>
                                 <td> 
-                                    <span>{renderProfileImage(contact.photo) } </span>
-                                    <span cla="ct-name"> {contact.name}  </span>
+                                    <UserInfo name={contact.name} dp_url={contact.photo} />
                                 </td>
                                 <td> {contact.email || '-'} </td>
                                 <td> {contact.phoneNumber} </td>
-                                <td onClick={() => deleteContact(contact.metaData.resourceName) } className="clickable_item hover_view">
-                                    <Icon name="delete"/>
+                                <td onClick={() => deleteContact(contact.metaData.resourceName)}>
+                                    <span className="clickable_item hover_view"> <Icon name="delete"/> </span>
                                 </td>
                             </tr>
                            ))
