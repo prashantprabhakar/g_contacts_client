@@ -32,7 +32,7 @@ const ContactList = ({
                         </thead>
                         {
                             contactList.map(contact => (
-                            <tr className="card h_60">
+                            <tr className="reactangle_box">
                                 <td></td>
                                 <td> 
                                     <UserInfo name={contact.name} dp_url={contact.photo} />

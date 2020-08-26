@@ -108,8 +108,15 @@ td:hover > .hover_view {
   display: block 
 }
 
-.h_60 {
+.reactangle_box {
   height: 60px;
+  width: 902px;
+  height: 60px;
+  left: 189px;
+  top: 193px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(5, 62, 209, 0.14);
+  border-radius: 8px;
 }
 
 .w_40 {
