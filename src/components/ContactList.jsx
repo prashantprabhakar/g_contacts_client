@@ -24,6 +24,7 @@ const ContactList = ({
                     contactList ?
                     <table>
                         <thead className="contact_th">
+                            <td className="w_40"></td>
                             <td> Name </td>
                             <td> Email </td>
                             <td> Phone </td>
@@ -31,7 +32,8 @@ const ContactList = ({
                         </thead>
                         {
                             contactList.map(contact => (
-                            <tr className="card">
+                            <tr className="card h_60">
+                                <td></td>
                                 <td> 
                                     <UserInfo name={contact.name} dp_url={contact.photo} />
                                 </td>

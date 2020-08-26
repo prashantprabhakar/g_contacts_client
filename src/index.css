@@ -107,3 +107,11 @@ code {
 td:hover > .hover_view {
   display: block 
 }
+
+.h_60 {
+  height: 60px;
+}
+
+.w_40 {
+  width: 40px;
+}
