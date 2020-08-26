@@ -16,6 +16,7 @@ code {
 .btn_logout {
   float: right;
   cursor: pointer;
+  padding-top: 10px;
 }
 
 .user_dtl {
@@ -35,21 +36,19 @@ code {
 
 .title {
   font-size: 27px;
-    color: #053ED1;
-    margin: 7vh;
-    height: 25px;
+  color: #053ED1;
+  margin: 7vh;
+  height: 25px;
 }
 
 .dp {
-      /* position: absolute; */
-      width: 40px;
-      height: 40px;
-      left: 235px;
-      top: 203px;
-      /* background: url(.jpg); */
-      border: 1px solid #FF0000;
-      box-sizing: border-box;
-      border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: 235px;
+  top: 203px;
+  border: 1px solid #FF0000;
+  box-sizing: border-box;
+  border-radius: 50%;
 }
 
 .inline_p {
@@ -61,12 +60,12 @@ code {
 }
 
 .contact_th > td {
-    font-style: normal;
-    font-size: 12px;
-    line-height: 18px;
-    align-items: center;
-    letter-spacing: 0.08em;
-    color: #B0C6FF;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: #B0C6FF;
 }
 
 .sub_txt{
@@ -92,11 +91,19 @@ code {
   display: none
 }
 
+.vertical_center {
+  vertical-align: middle;
+}
+
+.w20 {
+  width: 20px;
+}
+
 /* to show some table items on hover only */
-/* .hover_view {
+.hover_view {
   display: none;
 }
 
-tr:hover> .hover_view {
+td:hover > .hover_view {
   display: block 
-} */
+}
