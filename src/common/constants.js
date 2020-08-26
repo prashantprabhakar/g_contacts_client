@@ -1,6 +1,6 @@
 module.exports = {
 
-    API_URL: 'https://g-contacts-server.herokuapp.com/api/v1/',
+    API_URL: 'https://g-contacts-server.herokuapp.com/api/v1',
     DEFAULT_ROUTE: '/',
 
     GOOGLE_CLIENT_ID: "524069079139-g84ouomr67hc5uhv1ms57vdlp6ehnph8.apps.googleusercontent.com",
