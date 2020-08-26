@@ -31,7 +31,7 @@ const ContactList = ({
                         </thead>
                         {
                             contactList.map(contact => (
-                            <tr>
+                            <tr className="card">
                                 <td> 
                                     <UserInfo name={contact.name} dp_url={contact.photo} />
                                 </td>
